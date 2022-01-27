@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        display: flex;
+        margin: 50px;
+      }
+
+      .container1 {
+        position: relative;
+        width: 80px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 5px 25px;
+        margin-right: 25px;
+      }
+
+      .dropdown-cont {
+        display: none;
+        position: absolute;
+        top: 36px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 25px;
+        background-color: white;
+      }
+
+      .dropdown-cont a {
+        margin: 10px 0px;
+      }
+
+      .container1:hover .dropdown-cont {
+        display: flex;
+      }
+
+      .container2 {
+        height: 800px;
+        width: 60%;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+
+      .years {
+        display: block;
+        padding: 10px 5px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .years:nth-child(even) {
+        background-color: grey;
+      }
+
+      .years:nth-child(odd) {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <p>UG teams</p>
+        <div class="dropdown-cont">
+          <a href="/present-team">Present Team</a>
+          <a href="/past-teams">Past Team</a>
+        </div>
+      </div>
+      <div class="container2">
+        <a href="/present-team" class="years">UG team of year 19</a>
+        <a href="/present-team" class="years">UG team of year 18</a>
+        <a href="/present-team" class="years">UG team of year 17</a>
+        <a href="/present-team" class="years">UG team of year 16</a>
+        <a href="/present-team" class="years">UG team of year 15</a>
+        <a href="/present-team" class="years">UG team of year 14</a>
+        <a href="/present-team" class="years">UG team of year 13</a>
+        <a href="/present-team" class="years">UG team of year 12</a>
+        <a href="/present-team" class="years">UG team of year 11</a>
+        <a href="/present-team" class="years">UG team of year 10</a>
+      </div>
+    </div>
+  </body>
+</html>
